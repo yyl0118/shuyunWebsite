@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>兰州数云</title>
+		<link rel="alternate icon" type="../images/logo.png" href="../images/logo.png">
+		<meta name="keywords" content="兰州数云软件科技有限公司" />
+		<meta name="description" content="兰州数云软件科技有限公司" />
+		<meta name="viewport" id="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/iconfont.css">
+		<link rel="stylesheet" href="../css/reg.css">
+		<!--必要样式-->
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />
+	</head>
+	<body>
+		<div class="container demo-1">
+			<div class="content">
+				<div id="large-header" class="large-header">
+					<canvas id="demo-canvas"></canvas>
+					<div class="wpn">
+						<div class="form-data  pos">
+							<form>
+								<h4></h4>
+								<p class="p-input pos">
+									<label for="tel">手机号</label>
+									<input type="number" id="tel" autocomplete="off">
+									<span class="tel-warn tel-err hide"><em></em><i class="icon-warn"></i></span>
+								</p>
+								<p class="p-input pos" id="sendcode">
+									<label for="veri-code">输入验证码</label>
+									<input type="number" id="veri-code">
+									<a href="javascript:;" class="send">发送验证码</a>
+									<span class="time hide"><em>120</em>s</span>
+									<span class="error hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
+								</p>
+								<p class="p-input pos hide" id="pwd">
+									<label for="passport">输入密码</label>
+									<input type="password" style="display: none" />
+									<input type="password" id="passport">
+									<span class="tel-warn pwd-err hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
+								</p>
+								<p class="p-input pos hide" id="confirmpwd">
+									<label for="passport2">确认密码</label>
+									<input type="password" style="position:absolute;top:-998px" />
+									<input type="password" id="passport2">
+									<span class="tel-warn confirmpwd-err hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
+								</p>
+							</form>
+							<div class="bottom-info">已有账号，
+								<a href="./login.html">马上登录</a>
+							</div>
+							<button class="lang-btn lang-btn1">注册</button>
+							<p class="powerBy">Powered by © 2018 Shuyun</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="../js/TweenLite.min.js"></script>
+			<script src="../js/EasePack.min.js"></script>
+			<script src="../js/rAF.js"></script>
+			<script src="../js/login.js"></script>
+			<script src="../js/jquery-1.8.3.min.js"></script>
+			<script src="../js/login1.js"></script>
+	</body>
+</html>

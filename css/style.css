@@ -1,0 +1,149 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+.nav--active .nav {
+	opacity: 0.8;
+	background-color: #333;
+	padding-left: 30px;
+}
+.nav .loginBth{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../images/loginIcon.png) no-repeat center;
+	background-size:80%;
+	margin-top: 14px;
+	float: left;
+	margin-right: 10px;
+}
+.nav span{
+	font-size: 12px;
+	color: #CCCCCC;
+	display:inline-block;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+.nav span:hover{
+	color: #FFFFFF;
+}
+.nav span.active{
+	color: #FFFFFF;
+}
+.nav__list {
+	margin: 0;
+	margin-top: 50px;
+	width: 100%;
+	padding: 0;
+}
+
+.nav__item {
+	list-style-type: none;
+	text-align: left;
+}
+
+.nav__link {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFFFF;
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-in-out;
+	transition: opacity 300ms ease-in-out;
+}
+
+.nav__trigger {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 25px;
+	right: 10px;
+	top: -3px;
+	z-index: 999999999999999999;
+}
+.nav__icon {
+	display: inline-block;
+	position: relative;
+	width: 25px;
+	height: 2px;
+	background-color: #FFFFFF;
+	-webkit-transition-property: background-color, -webkit-transform;
+	transition-property: background-color, -webkit-transform;
+	transition-property: background-color, transform;
+	transition-property: background-color, transform, -webkit-transform;
+	-webkit-transition-duration: 300ms;
+	transition-duration: 300ms;
+}
+
+.nav__icon:before,
+.nav__icon:after {
+	content: '';
+	display: block;
+	width: 25px;
+	height: 2px;
+	position: absolute;
+	background: #FFF;
+	-webkit-transition-property: margin, -webkit-transform;
+	transition-property: margin, -webkit-transform;
+	transition-property: margin, transform;
+	transition-property: margin, transform, -webkit-transform;
+	-webkit-transition-duration: 300ms;
+	transition-duration: 300ms;
+}
+
+.nav__icon:before {
+	margin-top: -7px;
+}
+
+.nav__icon:after {
+	margin-top: 7px;
+}
+
+.style-1 .nav {
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99999;
+}
+
+.style-1 .nav__link {
+	opacity: 0;
+	-webkit-transition-delay: 500ms;
+	transition-delay: 500ms;
+}
+
+.style-1 .nav--active .nav__link {
+	opacity: 1;
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.style-1 .nav--active .nav {
+	-webkit-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.style-1 .nav--active .nav__icon {
+	background: rgba(0, 0, 0, 0);
+}
+
+.style-1 .nav--active .nav__icon:before {
+	margin-top: 0;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.style-1 .nav--active .nav__icon:after {
+	margin-top: 0;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
